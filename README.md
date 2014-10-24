@@ -4,6 +4,10 @@
 ## Motivation
 I created a version of [Vanilla JS](http://vanilla-js.com/) based on the original of [JoelSutherland](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget).
 
+## Demo
+
+Access [the url](http://www.pinceladasdaweb.com.br/blog/uploads/gitrepo/) and view in action.
+
 # How to install
 You can download the lib:
 
@@ -23,6 +27,14 @@ Like I said, download the package and reference the JavaScript and CSS files man
 <!-- Loading and initialize the GitRepo lib -->
 <script src="/path/to/gitrepo.min.js"></script>
 <script>GitRepo.init();</script>
+```
+
+In an AMD loader:
+
+```js
+require(['/path/to/gitrepo.min'], function(GitRepo) {
+    GitRepo.init()
+});
 ```
 
 Everwhere you want a widget to be placed, add the following markup:
