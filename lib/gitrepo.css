@@ -140,12 +140,19 @@
 }
 
 .github-box .github-box-title h3 .repo,.github-box .github-box-content .link {
-    font-weight:700;
+    font-weight: 700;
+}
+
+.github-widget .danger {
+    background-color: #f2dede;
+    border-radius: 5px;
+    padding: 15px;
+    font: 16px helvetica,arial,sans-serif;
 }
 
 @media max-width 767px{
     .github-box .github-box-title {
-        height:auto;
+        height: auto;
         min-height: 60px;
     }
 
