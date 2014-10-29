@@ -150,28 +150,15 @@
     font: 16px helvetica,arial,sans-serif;
 }
 
-@media max-width 767px{
-    .github-box .github-box-title {
-        height: auto;
-        min-height: 60px;
-    }
-
-    .github-box .github-box-title h3 .repo {
+@media only screen and (max-width: 480px) {
+    .github-box-title .repo {
         display: block;
-    }
-
-    .github-box .github-box-title .github-stats a {
-        display: block;
-        clear: right;
-        float: right;
-    }
-
-    .github-box .github-box-download {
-        height: auto;
-        min-height: 46px;
     }
 
     .github-box .github-box-download .download {
-        top: 32px;
+        display: block;
+        float: none;
+        position: static;
+        text-align: center;
     }
 }
