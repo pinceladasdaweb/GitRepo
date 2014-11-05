@@ -18,6 +18,7 @@
     color: #4183c4;
     border: 0;
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 .github-box .github-box-title {
