@@ -1,5 +1,5 @@
 # GitRepo
-> GitHub Repo Widget developed with VanillaJS.
+> Responsive GitHub Repo Widget developed with VanillaJS.
 
 ## Motivation
 I created a version of [Vanilla JS](http://vanilla-js.com/) based on the original of [JoelSutherland](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget).
