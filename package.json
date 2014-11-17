@@ -1,7 +1,7 @@
 {
     "name": "GitRepo",
     "description": "GitHub Repo Widget developed with VanillaJS",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "author": "Pedro Rogério",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
