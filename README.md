@@ -19,11 +19,18 @@ Please, this lib don't have CDN yet, so you need to download and put it in your 
 # How to use
 ### Loading the lib
 
-Like I said, download the package and reference the JavaScript and CSS files manually, using this tag below:
+Like I said, download the package and reference the JavaScript and CSS files manually.
+
+Put the CSS in the <head> section of your HTML document:
 
 ```html
 <!-- Required CSS for the GitRepo lib -->
 <link href="/path/to/gitrepo.min.css" rel="stylesheet" type="text/css" media="all">
+```
+
+Put the JavaScript before end of body tag:
+
+```html
 <!-- Loading and initialize the GitRepo lib -->
 <script src="/path/to/gitrepo.min.js"></script>
 <script>GitRepo.init();</script>
