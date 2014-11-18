@@ -21,7 +21,7 @@ Please, this lib don't have CDN yet, so you need to download and put it in your 
 
 Like I said, download the package and reference the JavaScript and CSS files manually.
 
-Put the CSS in the <head> section of your HTML document:
+Put the CSS in the head section of your HTML document:
 
 ```html
 <!-- Required CSS for the GitRepo lib -->
