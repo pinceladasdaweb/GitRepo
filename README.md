@@ -44,7 +44,7 @@ require(['/path/to/gitrepo.min'], function(GitRepo) {
 });
 ```
 
-Everwhere you want a widget to be placed, add the following markup:
+Everywhere you want a widget to be placed, add the following markup:
 
 ```html
 <div class="github-widget" data-repo="pinceladasdaweb/GitRepo"></div>
