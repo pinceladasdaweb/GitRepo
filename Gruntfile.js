@@ -5,13 +5,10 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         meta: {
-            banner: '/*! '+pkg.name+' '+pkg.version+' | (c) 2014 '+pkg.author+' | '+pkg.licenses[0].type+' License */'
+            banner: '/*! '+pkg.name+' '+pkg.version+' | (c) 2015 '+pkg.author+' | '+pkg.licenses[0].type+' License */'
         },
         cssmin: {
-            add_banner: {
-                options: {
-                    banner: '<%= meta.banner %>'
-                },
+            target: {
                 files: {
                     'build/gitrepo.min.css': ['lib/*.css']
                 }
@@ -26,9 +23,26 @@ module.exports = function (grunt) {
                     'build/gitrepo.min.js': ['lib/gitrepo.js']
                 }
             }
+        },
+        watch: {
+            css: {
+                files: ['lib/*.css'],
+                tasks: ['cssmin'],
+                options: {
+                    livereload: true,
+                },
+            },
+            js: {
+                files: ['lib/gitrepo.js'],
+                tasks: ['uglify'],
+                options: {
+                    livereload: true,
+                },
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
