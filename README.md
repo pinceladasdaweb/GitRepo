@@ -33,14 +33,14 @@ Put the JavaScript before end of body tag:
 ```html
 <!-- Loading and initialize the GitRepo lib -->
 <script src="/path/to/gitrepo.min.js"></script>
-<script>GitRepo.init();</script>
+<script>GitRepo();</script>
 ```
 
 In an AMD loader:
 
 ```js
 require(['/path/to/gitrepo.min'], function(GitRepo) {
-    GitRepo.init()
+    GitRepo()
 });
 ```
 
